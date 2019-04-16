@@ -1,2 +1,2 @@
 # patterns
-This rep create for learn patterns of js
+This rep was created for learn patterns of js
