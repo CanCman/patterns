@@ -40,4 +40,5 @@ console.log( instance1 instanceof Object); // true
 
 var instance2 = new Constructor('Mick', '55 years old', 'softworker');
 
+// problem
 console.log(instance1.sayName == instance2.sayName) // false
