@@ -1,6 +1,7 @@
 /**
  * Позволяет создавать одинаковые объекты
- * Минусы, нельзя воспользовать typeof
+ * Минусы, нельзя воспользовать instanceOf
+ * Просто функция, нотация с маленькой буквы.
  * @param {*} name 
  * @param {*} age 
  * @param {*} job 
@@ -23,7 +24,7 @@ console.log(instance.job);
 console.log(instance.sayName());
 
 /** problem */
-console.log(typeof instance);
+console.log( instance instanceof factory);
 
 
 
