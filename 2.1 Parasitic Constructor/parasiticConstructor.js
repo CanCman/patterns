@@ -7,6 +7,27 @@
  * - функция контруктор не находится в ссылке constror объккта;
  * - избыточность при создании методов для каждого экземпляра.
  * 
+ * Пример использования:
+ * 
+ * function SpecialArray(){ 
+ * 
+ *   // создание массива 
+ *   var values = new Array(); 
+ * 
+ *   // добавление значений 
+ *   values.push.apply(values, arguments); 
+ * 
+ *   // назначение метода 
+ *   values.toPipedString = function(){ 
+ *      return this.join("|"); 
+ *    };
+ *   // возвращение массива 
+ *   return values; 
+ * 
+ *   var colors = new SpecialArray("red", "bluе", "green"); 
+ *   alert(colors.toPipedString()); // "red|blue|green" 
+ * 
+ * 
  * @param {any} name 
  * @param {any} age 
  * @param {any} job 
