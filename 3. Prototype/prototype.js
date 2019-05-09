@@ -35,7 +35,7 @@ Obj.prototype.age = '5 years old';
 Obj.prototype.job = 'hardworker';
 Obj.prototype.sayName = function() {
   return 'My name is ' + this.name;
-}
+};
 
 var instance1 = new Obj();
 
@@ -46,8 +46,8 @@ console.log(instance1.sayName());
 
 console.log(instance1.constructor == Obj); // true
 
-console.log( instance1 instanceof Obj); // true
-console.log( instance1 instanceof Object); // true
+console.log(instance1 instanceof Obj); // true
+console.log(instance1 instanceof Object); // true
 
 var instance2 = new Obj();
 
@@ -57,4 +57,4 @@ console.log(instance2.age);
 console.log(instance2.job);
 console.log(instance2.sayName());
 
-console.log(instance1.sayName == instance2.sayName) // true
+console.log(instance1.sayName == instance2.sayName); // true
