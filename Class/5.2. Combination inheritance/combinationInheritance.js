@@ -2,15 +2,9 @@
  * Преимущества:
  * - совмещает преимущества двух паттернов кражи конструктора и наследование прототипа.
  * 
- * Минус:
+ * Недостатки:
  * - ссылочные типы наследуют ссылку родителя.
  * 
- * Особенности:
- * - невозможно использовать нотацию присвоения объекта прототипу, так как теряется объект наследования.
- * 
- * @param {any} name 
- * @param {any} age 
- * @param {any} job 
  */
 function SuperType(name) {
   this.name = name;
@@ -37,9 +31,9 @@ SubType.prototype.getAge = function() {
 var instance1 = new SubType('Dick', 5);
 instance1.colors.push('back');
 console.log('Первый экземпляр');
-console.log('Значение метода getName наследника - ' + instance1.getName()); // Dick
-console.log('Значение метода getAge наследника - ' + instance1.getAge()); // 5
-console.log('Значение свойства colors наследника - ' + instance1.colors); // red,blue,green,back
+console.log('Значение метода getName - ' + instance1.getName()); // Dick
+console.log('Значение метода getAge - ' + instance1.getAge()); // 5
+console.log('Значение свойства colors - ' + instance1.colors); // red,blue,green,back
 
 console.log('-----------------------------');
 
@@ -59,5 +53,4 @@ var instance2 = new SubType('Nick', 55);
 console.log('Второй экземпляр');
 console.log('Значение метода getName  - ' + instance2.getName()); // Nick
 console.log('Значение метода getAge  - ' + instance2.getAge()); // 55
-console.log('Значение свойства colors оригинала - ' + instance2.colors); // red,blue,green
-
+console.log('Значение свойства colors - ' + instance2.colors); // red,blue,green

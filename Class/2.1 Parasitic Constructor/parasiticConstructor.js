@@ -2,7 +2,7 @@
  * Преимущества:
  * - можно добавить свой метод в контруктор;
  * 
- * Минусы:
+ * Недостатки:
  * - получаемый объект не экземпляр своего конструктора;
  * - функция контруктор не находится в ссылке constror объккта;
  * - избыточность при создании методов для каждого экземпляра.
@@ -27,10 +27,6 @@
  *   var colors = new SpecialArray("red", "bluе", "green"); 
  *   alert(colors.toPipedString()); // "red|blue|green" 
  * 
- * 
- * @param {any} name 
- * @param {any} age 
- * @param {any} job 
  */
 function Obj(name, age, job) { 
   var o = new Object();
