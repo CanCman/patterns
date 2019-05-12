@@ -33,10 +33,6 @@ SubType.prototype.getSubValue = function() {
   return this.subproperty;
 };
 
-SubType.prototype.getSubValue = function() { 
-  return this.subproperty; 
-}; 
-
 // переопределение существующего метода 
 SubType.prototype.getSuperValue = function() { 
   return false; 
