@@ -65,5 +65,5 @@ console.log('-----------------------------');
 var superInstance = new SuperType();
 console.log('Значение метода getSuperValue оригинала - ' + superInstance.getSuperValue()); // true
 // problem
-console.log('Значение свойства colors оригинала - ' + subInstance.colors); // red,blue,green,back
+console.log('Значение свойства colors оригинала - ' + superInstance.colors); // red,blue,green,back
 
