@@ -45,4 +45,4 @@ instance2.name = 'Mick';
 instance2.friends.push('Dick');
 console.log('Второй экземпляр');
 console.log('Значение свойства name - ' + instance2.name); // Mick
-console.log('Значение свойства friends - ' + instance2.friends); // red,blue,green
+console.log('Значение свойства friends - ' + instance2.friends); // Shelby,Court,Van,Mick,Dick
