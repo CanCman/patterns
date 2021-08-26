@@ -55,8 +55,7 @@ console.log(SubType.prototype.isPrototypeOf(subInstance)); // true
 
 console.log('-----------------------------');
 
-var superInstance = new SuperType();
-console.log('Значение метода getSuperValue оригинала - ' + superInstance.getSuperValue()); // true
+var subInstance2 = new SubType();
 // problem
-console.log('Значение свойства colors оригинала - ' + superInstance.colors); // red,blue,green,back
+console.log('Значение свойства colors оригинала - ' + subInstance2.colors); // red,blue,green,back
 
